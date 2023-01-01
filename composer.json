@@ -1,0 +1,41 @@
+{
+    "name": "michaelferreira/laravel-disinspire",
+    "description": "Quotes of wisdom from the failure coach",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Michaelferreira\\LaravelDisinspire\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Michaelferreira\\LaravelDisinspire\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael de Oliveira Ferreira",
+            "email": "oliveiramichael@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">7.4",
+        "michaelferreira/failure-coach": "dev-main"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.x-dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Michaelferreira\\LaravelDisinspire\\Provider\\DisinpireServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    }
+}

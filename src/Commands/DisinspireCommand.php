@@ -2,6 +2,8 @@
 
 namespace Michaelferreira\LaravelDisinspire\Commands;
 
+
+
 use Illuminate\Console\Command;
 use Michaelferreira\FailureCoach\QuoteGenerator;
 use Michaelferreira\FailureCoach\Quotes;
@@ -16,7 +18,7 @@ class DisinspireCommand extends Command
     {
         $lang = $this->option('language');
         $quote = $this->option('quote') != 'null' ? $this->option('quote') : null;
-        return self::formatConsole($this->getWisdomQuote($quote, $lang));
+        $this->comment(self::formatConsole($this->getWisdomQuote($quote, $lang)));
     }
 
     public function getWisdomQuote($index, $lang): string

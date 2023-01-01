@@ -9,8 +9,10 @@ class DisinpireServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->commands([
-            DisinspireCommand::class
-        ]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                DisinspireCommand::class
+            ]);
+        }
     }
 }

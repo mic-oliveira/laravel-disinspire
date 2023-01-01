@@ -14,7 +14,6 @@ class DisinspireCommand extends Command
 
     public function handle()
     {
-
         $lang = $this->option('language');
         $quote = $this->option('quote') != 'null' ? $this->option('quote') : null;
         return self::formatConsole($this->getWisdomQuote($quote, $lang));

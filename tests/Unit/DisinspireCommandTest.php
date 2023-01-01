@@ -12,6 +12,12 @@ class DisinspireCommandTest extends TestCase
         parent::setUp();
     }
 
+    public function test_get_quote()
+    {
+        self::assertIsString(DisinspireCommand::getWisdomQuote());
+        self::assertEquals('Nunca foi azar, sempre foi incompetência.', DisinspireCommand::getWisdomQuote(0));
+    }
+
     public function test_command_exec()
     {
         $this->artisan(DisinspireCommand::class, ['--quote' => 0])->assertSuccessful()->run();

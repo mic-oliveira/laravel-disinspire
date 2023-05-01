@@ -18,7 +18,6 @@
             "email": "oliveiramichael@outlook.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">7.4",
         "michaelferreira/failure-coach": ">=0.0.1"

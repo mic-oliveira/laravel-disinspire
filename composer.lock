@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fa4a4a6a3a8f7964af6287cc20763d4",
+    "content-hash": "e7ae33bca01cb5296ce4f8be7ad0ed2b",
     "packages": [
         {
             "name": "michaelferreira/failure-coach",

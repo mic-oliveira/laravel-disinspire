@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">7.4",
-        "michaelferreira/failure-coach": ">=0.0.1"
+        "michaelferreira/failure-coach": "0.0.1"
     },
     "require-dev": {
         "orchestra/testbench": "6.x-dev"

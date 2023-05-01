@@ -21,7 +21,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">7.4",
-        "michaelferreira/failure-coach": "dev-main"
+        "michaelferreira/failure-coach": "*"
     },
     "require-dev": {
         "orchestra/testbench": "6.x-dev"
